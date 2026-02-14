@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadDashboard()">
+
+    <div class="navbar">
+        <h1>Secure Auth System</h1>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+
+    </div>
+
+    <div class="dashboard-container">
+
+        <div class="hero-section">
+            <h2 id="welcome"></h2>
+        </div>
+
+        <div class="cards">
+
+            <div class="card" onclick="openSite('https://owasp.org/www-project-top-ten/')">
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
+                <h3>Secure Authentication</h3>
+                <p>Learn about security best practices & password protection.</p>
+            </div>
+
+            <div class="card" onclick="openSite('https://jwt.io/')">
+                <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f">
+                <h3>JWT Authorization</h3>
+                <p>Understand how JSON Web Tokens work in authentication.</p>
+            </div>
+
+            <div class="card" onclick="openSite('https://roadmap.sh/full-stack')">
+                <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72">
+                <h3>Full Stack Architecture</h3>
+                <p>Explore full stack development roadmap & architecture.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

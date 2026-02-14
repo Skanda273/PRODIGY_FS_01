@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Secure Auth System</h1>
+    </div>
+
+    <!-- Register Card -->
+    <div class="container">
+        <h2>Create Account</h2>
+
+        <input type="text" id="name" placeholder="Enter Full Name" required>
+        <input type="email" id="email" placeholder="Enter Email" required>
+        <input type="password" id="password" placeholder="Enter Password" required>
+
+        <button onclick="register()">Register</button>
+
+        <p style="margin-top: 15px;">
+            Already have an account?
+            <a href="index.html" style="color:#00c6ff;">Login</a>
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
